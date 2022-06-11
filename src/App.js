@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 
-function renderedList(list) {
-  return (
-    list.map(i => <li>{i}</li>)
-  )
-}
+const renderedList = list => list.map(i => <li>{i}</li>);
 
 function App() {
   const [list, setList] = useState([1,2,3]);
