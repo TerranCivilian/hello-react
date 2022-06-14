@@ -9,9 +9,11 @@ function App() {
   return (
     <div>
       <span>
+        {/* append next consecutive number to list */}
         <button onClick={() => list.length > 0 ? setList([...list, list[list.length-1] + 1]) : setList([1])}>
           +
         </button>
+        {/* remove last number from list */}
         <button onClick={() => list.length > 0 && setList(list.slice(0, list.length - 1))}>
           -
         </button>
